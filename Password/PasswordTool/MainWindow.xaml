@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:PasswordTool"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,0,-5" x:Name="mainpage">
-        
+    <Grid x:Name="mainpage">
+        <Menu x:Name="menu" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New..."  />
+                <MenuItem Header="Open..." InputGestureText="ctrl+o" />
+                <Separator />
+                <MenuItem Header="Sen_d To">
+                    <MenuItem Header="Mail Recipient" />
+                    <MenuItem Header="My Documents" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+            </MenuItem>
+            <MenuItem Header="View">
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
